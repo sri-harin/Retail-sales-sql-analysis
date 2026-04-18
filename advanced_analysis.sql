@@ -1,1 +1,0 @@
-SELECT customer_id, RANK() OVER (...) FROM retail_sales;
