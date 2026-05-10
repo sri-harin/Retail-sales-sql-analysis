@@ -1,127 +1,65 @@
-# 🛒 Retail Sales Analysis using SQL
+# 📚 Library Management System using SQL
 
 ## 📌 Project Overview
-
-This project analyzes retail sales data to extract meaningful business insights such as customer behavior, product performance, and time-based sales trends using SQL.
+This project implements a Library Management System using SQL to manage books, authors, members, issuing transactions, and return records efficiently.  
+The project demonstrates relational database design, table relationships, and SQL queries for tracking and analyzing library operations.
 
 ---
 
 ## 🎯 Objectives
-
-* Analyze sales performance across product categories
-* Identify top customers and revenue contributors
-* Understand monthly and time-based sales trends
-* Perform data cleaning for accurate analysis
+- Design a relational database schema for library operations
+- Manage books, authors, and member records
+- Track issued and returned books
+- Identify overdue books and active members
+- Perform SQL-based data retrieval and analysis
 
 ---
 
 ## 🛠️ Tools Used
-
-* MySQL
-* SQL (Joins, Aggregations, Window Functions)
-* CSV Dataset
+- MySQL
+- SQL (Joins, Aggregations, Filtering)
+- Relational Database Concepts
 
 ---
 
 ## 📂 Project Structure
-
-* `data/` → Dataset
-* `sql/` → SQL queries
-* `outputs/` → Result screenshots
+- `sql/` → SQL scripts (table creation, insertion, queries)
+- `outputs/` → Query result screenshots
 
 ---
 
-## 📁 Dataset Description
+## 📁 Database Description
+The database contains the following tables:
 
-The dataset contains retail transaction data including:
+- Authors
+- Books
+- Members
+- Loans
+- Returns
 
-* Customer ID
-* Product category
-* Sale date and time
-* Quantity and total sales
-
-This dataset is used to analyze sales trends and customer purchasing behavior.
+These tables are connected using Primary Keys and Foreign Keys to maintain relational integrity.
 
 ---
 
 ## 📊 Sample Outputs
 
-### Top Customers
+### 📚 Books with Authors
+![Books](outputs/books_with_authors.png)
 
-![Top Customers](outputs/top_customers.png)
+### 📖 Issued Books
+![Issued Books](outputs/issued_books.png)
 
-### Category Sales
+### 🏆 Top Members
+![Top Members](outputs/top_members.png)
 
-![Category Sales](outputs/category_sales.png)
-
-### Monthly Trend
-
-![Monthly Trend](outputs/monthly_trend.png)
+### ⏰ Overdue Books
+![Overdue Books](outputs/overdue_books.png)
 
 ---
 
 ## 🚀 How to Run
 
-1. Create database:
-
-   ```sql
-   CREATE DATABASE retail_db;
-   USE retail_db;
-   ```
-
-2. Run the following files:
-
-   * `schema.sql`
-   * `data_cleaning.sql`
-
-3. Execute analysis:
-
-   * `analysis.sql`
-   * `advanced_analysis.sql`
-
----
-
-## ⚙️ Execution
-
-All SQL queries were executed using MySQL Command Line.
-
----
-
-## 💡 Key SQL Concepts Used
-
-* Window Functions (RANK)
-* Aggregations (SUM, AVG)
-* Date Functions (EXTRACT)
-* CASE statements
-
----
-
-## 📈 Business Insights
-
-* Clothing category contributes the highest revenue
-* Peak sales observed during festive months
-* Top customers significantly drive total revenue
-* Afternoon time shows highest order volume
-
----
-
-## 🛠 Skills Used
-
-* SQL (Joins, Aggregations, Window Functions)
-* Data Cleaning
-* Exploratory Data Analysis (EDA)
-* Business Insight Generation
-
----
-
-## 🚀 What I Learned
-
-* Writing optimized SQL queries
-* Handling real-world datasets
-* Extracting business insights from raw data
-
----
-
-## 🎯 Conclusion
-
-This project demonstrates practical SQL skills applied to real-world retail data for generating actionable business insights.
+### Create Database
+```sql
+CREATE DATABASE library_db;
+USE library_db;
